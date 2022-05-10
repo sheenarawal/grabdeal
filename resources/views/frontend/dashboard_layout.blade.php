@@ -31,7 +31,7 @@
                             <li class="d-block rounded-lg "><a href="#">
                                     <i class="ti-lock font-sm"></i><span> Password</span></a>
                             </li>
-                            <li class="d-block rounded-lg "><a href="#">
+                            <li class="d-block rounded-lg "><a href="{{route('frontend.refer_code')}}">
                                     <i class="ti-lock font-sm"></i><span> Refer Code</span></a>
                             </li>
                             <li class="d-block rounded-lg "><a href="#">

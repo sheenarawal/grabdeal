@@ -92,7 +92,7 @@
 
     <div class="offer-wrapper pb-4 bg-lightblue">
         <div class="container">
-            <div class="row">
+            <div class="row  d-none">
                 <div class="brand-slider owl-carousel owl-theme overflow-visible dot-none pt-3">
                     <div class="owl-items text-center"><img src="{{asset('Frontend/images/b-1.png')}}" alt="icon" class="w100 ml-auto mr-auto"></div>
                     <div class="owl-items text-center"><img src="{{asset('Frontend/images/b-2.png')}}" alt="icon" class="w100 ml-auto mr-auto"></div>
@@ -105,7 +105,7 @@
         </div>
     </div>
 
-    <div class="popular-wrapper pt-lg--7 pb-lg--7 pb-5 pt-5 bg-lightblue">
+    <div class="popular-wrapper {{--pt-lg--7--}} pb-lg--7 pb-5 {{--pt-5--}} bg-lightblue">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 text-left mb-5 pb-0">
@@ -421,9 +421,9 @@
         </div>
     </div>
 
-    <div class="brand-wrapper pt-2 pb-7">
+    <div class="brand-wrapper pt-2 pb-7 pb-0">
         <div class="container">
-            <div class="row">
+            <div class="row d-none">
                 <div class="col-lg-12">
                     <div class="brand-slider owl-carousel owl-theme overflow-visible dot-none">
                         <div class="owl-items text-center"><img src="{{asset('Frontend/images/b-1.png')}}" alt="icon" class="w100 ml-auto mr-auto"></div>

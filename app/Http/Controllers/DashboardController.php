@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\View\View;
 
 class DashboardController extends Controller
 {
@@ -59,6 +60,10 @@ class DashboardController extends Controller
 
     public function refer_code()
     {
-        //
+        $users = [];
+        if(Auth::user()->refer_code != ''){
+            $users = User::where('refer_by',Auth::user()->refer_code)->latest()->get();
+        }
+        return view('frontend.user.refer',compact('users'));
     }
 }

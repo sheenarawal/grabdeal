@@ -111,3 +111,12 @@ if (!function_exists('create_refer_code')) {
     }
 
 }
+if (!function_exists('date_format')) {
+
+    function date_format($date,$formate)
+    {
+        return \Carbon\Carbon::parse($date)->format($formate);
+
+    }
+
+}
